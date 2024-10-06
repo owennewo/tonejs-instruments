@@ -9,7 +9,7 @@ var SampleLibrary = {
     minify: false,
     ext: '.[mp3|ogg]', // use setExt to change the extensions on all files // do not change this variable //
     baseUrl: '/samples/',
-    list: ['bass-electric','bassoon','cello','clarinet','contrabass','flute','french-horn','guitar-acoustic','guitar-electric','guitar-nylon', 'harmonium','harp','organ','piano','saxophone','trombone','trumpet','tuba','violin','xylophone'],
+    list: ['bass-electric', 'bassoon', 'cello', 'clarinet', 'contrabass', 'flute', 'french-horn', 'guitar-acoustic', 'guitar-electric', 'guitar-nylon', 'harmonium', 'harp', 'organ', 'piano', 'saxophone', 'trombone', 'trumpet', 'tuba', 'violin', 'xylophone'],
     onload: null,
 
     setExt: function (newExt) {
@@ -28,7 +28,7 @@ var SampleLibrary = {
 
     load: function (arg) {
         var t, rt, i;
-        (arg) ? t = arg: t = {};
+        (arg) ? t = arg : t = {};
         t.instruments = t.instruments || this.list;
         t.baseUrl = t.baseUrl || this.baseUrl;
         t.onload = t.onload || this.onload;
@@ -74,9 +74,9 @@ var SampleLibrary = {
 
                 rt[t.instruments[i]] = new Tone.Sampler(
                     newT, {
-                        baseUrl: t.baseUrl + t.instruments[i] + "/",
-                        onload: t.onload
-                    }
+                    baseUrl: t.baseUrl + t.instruments[i] + "/",
+                    onload: t.onload
+                }
 
                 )
             }
@@ -113,9 +113,9 @@ var SampleLibrary = {
 
             var s = new Tone.Sampler(
                 newT, {
-                    baseUrl: t.baseUrl + t.instruments + "/",
-                    onload: t.onload
-                }
+                baseUrl: t.baseUrl + t.instruments + "/",
+                onload: t.onload
+            }
             )
 
             return s
@@ -255,44 +255,43 @@ var SampleLibrary = {
     },
 
     'guitar-acoustic': {
-        'F4': 'F4.[mp3|ogg]',
-        'F#2': 'Fs2.[mp3|ogg]',
-        'F#3': 'Fs3.[mp3|ogg]',
-        'F#4': 'Fs4.[mp3|ogg]',
-        'G2': 'G2.[mp3|ogg]',
-        'G3': 'G3.[mp3|ogg]',
-        'G4': 'G4.[mp3|ogg]',
-        'G#2': 'Gs2.[mp3|ogg]',
-        'G#3': 'Gs3.[mp3|ogg]',
-        'G#4': 'Gs4.[mp3|ogg]',
-        'A2': 'A2.[mp3|ogg]',
-        'A3': 'A3.[mp3|ogg]',
-        'A4': 'A4.[mp3|ogg]',
-        'A#2': 'As2.[mp3|ogg]',
-        'A#3': 'As3.[mp3|ogg]',
-        'A#4': 'As4.[mp3|ogg]',
-        'B2': 'B2.[mp3|ogg]',
-        'B3': 'B3.[mp3|ogg]',
-        'B4': 'B4.[mp3|ogg]',
-        'C3': 'C3.[mp3|ogg]',
-        'C4': 'C4.[mp3|ogg]',
-        'C5': 'C5.[mp3|ogg]',
-        'C#3': 'Cs3.[mp3|ogg]',
-        'C#4': 'Cs4.[mp3|ogg]',
-        'C#5': 'Cs5.[mp3|ogg]',
-        'D2': 'D2.[mp3|ogg]',
-        'D3': 'D3.[mp3|ogg]',
-        'D4': 'D4.[mp3|ogg]',
-        'D5': 'D5.[mp3|ogg]',
-        'D#2': 'Ds2.[mp3|ogg]',
-        'D#3': 'Ds3.[mp3|ogg]',
-        'D#4': 'Ds3.[mp3|ogg]',
-        'E2': 'E2.[mp3|ogg]',
-        'E3': 'E3.[mp3|ogg]',
-        'E4': 'E4.[mp3|ogg]',
-        'F2': 'F2.[mp3|ogg]',
-        'F3': 'F3.[mp3|ogg]'
-
+        'D2': 'D2.[mp3|ogg|wav]',
+        'Ds2': 'Ds2.[mp3|ogg|wav]',
+        'E2': 'E2.[mp3|ogg|wav]',
+        'F2': 'F2.[mp3|ogg|wav]',
+        'Fs2': 'Fs2.[mp3|ogg|wav]',
+        'G2': 'G2.[mp3|ogg|wav]',
+        'Gs2': 'Gs2.[mp3|ogg|wav]',
+        'A2': 'A2.[mp3|ogg|wav]',
+        'As2': 'As2.[mp3|ogg|wav]',
+        'B2': 'B2.[mp3|ogg|wav]',
+        'C3': 'C3.[mp3|ogg|wav]',
+        'Cs3': 'Cs3.[mp3|ogg|wav]',
+        'D3': 'D3.[mp3|ogg|wav]',
+        'Ds3': 'Ds3.[mp3|ogg|wav]',
+        'E3': 'E3.[mp3|ogg|wav]',
+        'F3': 'F3.[mp3|ogg|wav]',
+        'Fs3': 'Fs3.[mp3|ogg|wav]',
+        'G3': 'G3.[mp3|ogg|wav]',
+        'Gs3': 'Gs3.[mp3|ogg|wav]',
+        'A3': 'A3.[mp3|ogg|wav]',
+        'As3': 'As3.[mp3|ogg|wav]',
+        'B3': 'B3.[mp3|ogg|wav]',
+        'C4': 'C4.[mp3|ogg|wav]',
+        'Cs4': 'Cs4.[mp3|ogg|wav]',
+        'D4': 'D4.[mp3|ogg|wav]',
+        'Ds4': 'Ds4.[mp3|ogg|wav]',
+        'E4': 'E4.[mp3|ogg|wav]',
+        'F4': 'F4.[mp3|ogg|wav]',
+        'Fs4': 'Fs4.[mp3|ogg|wav]',
+        'G4': 'G4.[mp3|ogg|wav]',
+        'Gs4': 'Gs4.[mp3|ogg|wav]',
+        'A4': 'A4.[mp3|ogg|wav]',
+        'As4': 'As4.[mp3|ogg|wav]',
+        'B4': 'B4.[mp3|ogg|wav]',
+        'C5': 'C5.[mp3|ogg|wav]',
+        'Cs5': 'Cs5.[mp3|ogg|wav]',
+        'D5': 'D5.[mp3|ogg|wav]'
     },
 
 
