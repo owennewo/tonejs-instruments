@@ -1,0 +1,16 @@
+{
+    "name": "tonejs-instruments",
+    "version": "1.0.0",
+    "description": "A collection of instruments for Tone.js",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/owennewo/tonejs-instruments.git"
+    },
+    "author": "nbrosowsky",
+    "license": "MIT",
+    "dependencies": {
+        "tone": "^15.0.4"
+    },
+    "keywords": [ "tonejs", "instruments", "sound", "music" ]
+}
